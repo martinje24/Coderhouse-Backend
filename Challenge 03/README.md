@@ -38,3 +38,9 @@ Martín Reyes Jesús Iván 31-May-2022 Backend
  }
 ]
 ```
+
+### Resultados
+
+![image_1](images/c3-image1.png)
+![image_2](images/c3-image2.png)
+![image_3](images/c3-image3.png)

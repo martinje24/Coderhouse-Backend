@@ -51,7 +51,7 @@ class Contenedor{
 
     async getAll(){
         let object=await fs.readFile(this.filePath+this.nameFile)
-        console.log(JSON.parse(object))
+        //console.log(JSON.parse(object))
         return JSON.parse(object)
     }
 
