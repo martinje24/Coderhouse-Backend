@@ -30,7 +30,6 @@ app.get('/productoRandom',async (req,res)=>{
     res.end(JSON.stringify(json_by_ID, null,'\t'))
 })
 
-
 /*Functions to use in the Express.js App*/
 const pickRandomNumber=(max_number)=>{
     return Math.floor(Math.random()*max_number)+1;

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body { padding-top: 50px; padding-right: 50px; padding-left: 50px; text-align: center;}
+    </style>
+</head>
+<body>
+    <h4 style="opacity: 0.4;">Martín Reyes Jesús Iván</h4>
+    <h2><b>Coder House</b></h2>
+    <h3><b>Desafío 4 | API RESTful</b></h3>
+    <br>
+    
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Formulario</h1>
+            <form action="/api/productos", method="post">
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <label for="validationTooltip01">Title</label>
+                        Title: <input type="text" class="form-control" id="validationTooltip03" placeholder="(nombre del producto)" required name="title">
+                        <div class="invalid-tooltip">
+                        Please provide a valid title.
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationTooltip02">Price</label>
+                    Price: <input type="text" class="form-control" id="validationTooltip04" placeholder="(precio)" required name="price">
+                    <div class="invalid-tooltip">
+                        Please provide a valid price.
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationTooltip03">Thumbnail</label>
+                    Thumbnail: <input type="text" class="form-control" id="validationTooltip05" placeholder="(url al logo o foto del producto)" required name="thumbnail">
+                    <div class="invalid-tooltip">
+                        Please provide a valid Thumbnail.
+                    </div>
+                </div>
+                </div>
+                <button class="btn btn-primary" type="submit">Submit form</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- <h2>Ingrese Producto</h2>
+    <form action="/productos/guardar" method="POST">
+        Title: <input type="text" name="title">
+        Price: <input type="text" name="price">
+        Thumbnail: <input type="text" name="thumbnail">
+        <button>Enviar</button>
+    </form> -->
+
+
+    
+
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!--Grid row-->
+            <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Consigna</h5>
+
+                <p>
+                    Realizar un proyecto de servidor basado en node.js 
+                    y express que ofrezca una API RESTful de productos. 
+                    En detalle, que incorpore las siguientes rutas:
+                    <ul>
+                        <li>GET '/api/productos' -> devuelve todos los productos.</li>
+                        <li>GET '/api/productos/:id' -> devuelve un producto según su id.</li>
+                        <li>POST '/api/productos' -> recibe y agrega un producto, y lo devuelve con su id asignado.</li>
+                        <li>PUT '/api/productos/:id' -> recibe y actualiza un producto según su id.</li>
+                        <li>DELETE '/api/productos/:id' -> elimina un producto según su id.</li>
+                    </ul>
+                    Cada producto estará representado por un objeto con el siguiente formato:
+                    
+                </p>
+                <img src="\src\imgs\example.png" alt="Example">
+                
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Consideraciones</h5>
+
+                <p>
+                    Cada ítem almacenado dispondrá de un id numérico 
+                    proporcionado por el backend, comenzando en 1, y 
+                    que se irá incrementando a medida de que se 
+                    incorporen productos. Ese id será utilizado para 
+                    identificar un producto que va a ser listado en 
+                    forma individual.
+                    <ol>
+                        <li>
+                            Para el caso de que un producto no exista, se devolverá el objeto:
+                            { error : 'producto no encontrado' }
+                        </li>
+                        <li>
+                            Implementar la API en una clase separada, utilizando un array como 
+                            soporte de persistencia en memoria.
+                        </li>
+                        <li>
+                            Incorporar el Router de express en la url base '/api/productos' y 
+                            configurar todas las subrutas en base a este.
+                        </li>
+                        <li>
+                            Crear un espacio público de servidor que contenga un documento 
+                            index.html con un formulario de ingreso de productos con los datos apropiados.
+                        </li>
+
+                    </ol>
+                </p>
+            </div>
+            <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright.
+            <a class="text-white" href="https://github.com/martinje24/Coderhouse-Backend">Check on github repository at @martinje24</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+</body>
+</html>
