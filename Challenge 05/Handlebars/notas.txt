@@ -1,0 +1,11 @@
+Para desafío 5 - motores de plantillas
+
+Se inicia proyecto con node => (npm init -y)
+
+se instala express => (npm install express)
+
+se instala handlebars => (npm install express-handlebars)
+
+
+controlar las vistas  --  no entiendo/encuentro desde donde se ordena que vista es 
+la primera en salir.
