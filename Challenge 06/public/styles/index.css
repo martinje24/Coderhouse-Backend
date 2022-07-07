@@ -1,0 +1,12 @@
+html {
+    text-align: center;
+}
+
+#product-form_container {
+    background-color: antiquewhite;
+    height: 100px;
+}
+
+.messages-list_container {
+    background-color: gray;
+}
